@@ -4,12 +4,16 @@
     <xsl:template match="/">
       [
         <xsl:for-each select="univerzita/studenti/student">
-          <xsl:sort select="prijmeni"/>
-        {
-          "jmeno": "<xsl:value-of select="jmeno"/>",
-          "prijmeni": "<xsl:value-of select="prijmeni"/>",
-          "id": "<xsl:value-of select="@id"/>"          
-        }<xsl:if test="position() != last()">,</xsl:if>
+          <xsl:sort select="vek"/>
+          <xsl:if test="vek > 25">
+            {
+            "jmeno": "<xsl:value-of select="jmeno"/>",
+            "prijmeni": "<xsl:value-of select="prijmeni"/>",
+            "id": "<xsl:value-of select="@id"/>",
+            "ulice:" "<xsl:value-of select="ulice"/>,
+            "vek:" "<xsl:value-of select="vek"/>
+            }<xsl:if test="position() != last()">,</xsl:if>
+          </xsl:if>
         </xsl:for-each>
       ]
     </xsl:template>
