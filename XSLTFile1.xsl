@@ -3,10 +3,13 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
       [
-        <xsl:for-each select="univerzita">
+        <xsl:for-each select="univerzita/studenti/student">
+          <xsl:sort select="prijmeni"/>
         {
-          "nazev": "<xsl:value-of select="nazev"/>",
-        }
+          "jmeno": "<xsl:value-of select="jmeno"/>",
+          "prijmeni": "<xsl:value-of select="prijmeni"/>",
+          "id": "<xsl:value-of select="@id"/>"          
+        }<xsl:if test="position() != last()">,</xsl:if>
         </xsl:for-each>
       ]
     </xsl:template>
