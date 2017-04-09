@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<pDLauncher>
+<Launcher
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="projekt-XSD-1.0.xsd">>
   <Mainform>
     <width>500px</width>
     <height>500px</height>
@@ -9,11 +11,11 @@
     <defaultPosition>Maximized</defaultPosition>
     <opacity>100%</opacity>
     <text>pDLauncher</text>
-      <button1>
+    <button1>
         <visible>No</visible>
         <width>120px</width>
         <heigth>60px</heigth>
-      </button1>
+    </button1>
       <image>
         <visible>Yes</visible>
         <width>500px</width>
@@ -41,5 +43,5 @@
     <button1></button1>
     <button2></button2>
   </Loginform>
-</pDLauncher>
+</Launcher>
 
