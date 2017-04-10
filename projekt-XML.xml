@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Launcher
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="projekt-XSD-1.0.xsd">>
+  <Mainform>
+    <width>500px</width>
+    <height>500px</height>
+    <adjustable>Yes</adjustable>
+    <controls>No</controls>
+    <movable>No</movable>
+    <defaultPosition>Maximized</defaultPosition>
+    <opacity>100%</opacity>
+    <text>pDLauncher</text>
+    <button1>
+        <visible>No</visible>
+        <width>120px</width>
+        <heigth>60px</heigth>
+    </button1>
+      <image>
+        <visible>Yes</visible>
+        <width>500px</width>
+        <heigth>500px</heigth>
+      </image>
+      <label1></label1>
+      <gridView></gridView>
+      <progressBar></progressBar>
+  </Mainform>
+  
+  <InputForm>
+    <textbox1></textbox1>
+    <textbox2></textbox2>
+    <label1></label1>
+    <label2></label2>
+    <button1></button1>
+  </InputForm>
+
+  <Loginform>
+    <label1></label1>
+    <label2></label2>
+    <textBox1></textBox1>
+    <textBox2></textBox2>
+    <image></image>
+    <button1></button1>
+    <button2></button2>
+  </Loginform>
+</Launcher>
+
