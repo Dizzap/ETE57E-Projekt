@@ -1,36 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Launcher
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
   <Mainform>
-    <width>500px</width>
-    <height>500px</height>
+    <width>100%</width>
+    <height>100%</height>
     <adjustable>No</adjustable>
     <controls>No</controls>
     <movable>No</movable>
     <defaultPosition>Center</defaultPosition>
     <opacity>100%</opacity>
     <text>Launcher</text>
-    <button1>
-        <visible>No</visible>
+    <server_path>/data/versions/</server_path>
+    <local_path>/data/versions/</local_path>
+    <login_button>
+        <visible>Yes</visible>
         <width>60px</width>
-        <heigth>30px</heigth>
-    </button1>
-    <image>
+        <height>30px</height>
+    </login_button>
+    <background_image>
+      <path>/data/pictures/background/</path>
       <visible>Yes</visible>
-      <width>500px</width>
-      <heigth>500px</heigth>
-    </image>
+      <width>100%</width>
+      <heigth>100%</heigth>
+    </background_image>
     <label1>
       <visible>No</visible>
       <width>120px</width>
       <heigth>60px</heigth>
     </label1>
-    <gridView>
+    <gallery>
       <visible>No</visible>
       <width>120px</width>
       <heigth>60px</heigth>
-    </gridView>
+      <image_source>
+        <path>/data/pictures/gallery/</path>
+        <ending>.jpg</ending>
+        <max_count>5</max_count>
+      </image_source>
+      <slideshow>Yes</slideshow>
+      <slide_time>15</slide_time>
+    </gallery>
     <progressBar>
       <value>0</value>
       <visible>No</visible>
@@ -41,14 +51,14 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
   </Mainform>
   
   <InputForm>
-    <width>300px</width>
-    <height>240px</height>
+    <width>100%</width>
+    <height>100%</height>
     <adjustable>Yes</adjustable>
     <controls>No</controls>
     <movable>Yes</movable>
     <defaultPosition>Center</defaultPosition>
     <opacity>100%</opacity>
-    <text>InputForm</text>
+    <text>Input</text>
     <textbox1>      
       <width>120px</width>
       <heigth>60px</heigth>
@@ -65,49 +75,60 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
       <width>120px</width>
       <heigth>60px</heigth>
     </label2>
-    <button1>      
+    <accept_button>      
       <width>120px</width>
       <heigth>60px</heigth>
-    </button1>
+    </accept_button>
+    <close_button>      
+      <width>120px</width>
+      <heigth>60px</heigth>
+    </close_button>
   </InputForm>
 
   <Loginform>
-    <width>300px</width>
-    <height>240px</height>
-    <adjustable>Yes</adjustable>
+    <width>100%</width>
+    <height>100%</height>
+    <adjustable>No</adjustable>
     <controls>No</controls>
-    <movable>Yes</movable>
+    <movable>No</movable>
     <defaultPosition>Center</defaultPosition>
-    <opacity>100%</opacity>
-    <text>LoginForm</text>
-    <label1>
+    <text>Login</text>
+    <login_label>
       <width>120px</width>
       <heigth>60px</heigth>
-    </label1>
-    <label2>
+      <text>Nickname: </text>
+    </login_label>
+    <pssd_label>
       <width>120px</width>
       <heigth>60px</heigth>
-    </label2>
-    <textBox1>
+      <text>Password: </text>
+    </pssd_label>
+    <login_textBox>
       <width>120px</width>
       <heigth>60px</heigth>
-    </textBox1>
-    <textBox2>
+      <text>Enter Nickname Here</text>
+      <max_input>20</max_input>
+    </login_textBox>
+    <pssd_textBox>
       <width>120px</width>
       <heigth>60px</heigth>
-    </textBox2>
+      <text>Enter Password Here</text>
+      <char>*</char>
+      <max_input>20</max_input>
+    </pssd_textBox>
     <image>
       <width>120px</width>
       <heigth>60px</heigth>
     </image>
-    <button1>
+    <login_button>
       <width>120px</width>
       <heigth>60px</heigth>
-    </button1>
-    <button2>
+      <text>Login</text>
+    </login_button>
+    <cancel_button>
       <width>120px</width>
       <heigth>60px</heigth>
-    </button2>
+      <text>Cancel</text>
+    </cancel_button>
   </Loginform>
 </Launcher>
-
