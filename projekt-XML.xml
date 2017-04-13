@@ -65,11 +65,13 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
       <width>120px</width>
       <heigth>60px</heigth>
       <max_lenght>50</max_lenght>
+      <text>Enter name</text>
     </heading_textbox>
     <body_textbox>      
       <width>120px</width>
       <heigth>60px</heigth>
       <max_lenght>550</max_lenght>
+      <text>Enter description</text>
     </body_textbox>
     <heading_label>      
       <width>120px</width>
