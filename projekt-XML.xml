@@ -3,6 +3,18 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
   <Mainform>
+    <user></user>
+    <password></password>
+    <api>
+      <url>blabla</url>
+      <method>REST</method>
+      <return>JSON</return>
+    </api>
+    <uispecification>
+      <format>CSS</format>
+      <version>3</version>
+    </uispecification>
+    
     <width>100%</width>
     <height>100%</height>
     <adjustable>No</adjustable>
