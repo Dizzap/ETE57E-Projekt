@@ -60,30 +60,36 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
     <movable>Yes</movable>
     <defaultPosition>Center</defaultPosition>
     <opacity>100%</opacity>
-    <text>Input</text>
-    <textbox1>      
+    <text>Feedback</text>
+    <heading_textbox>      
       <width>120px</width>
       <heigth>60px</heigth>
-    </textbox1>
-    <textbox2>      
+      <max_lenght>50</max_lenght>
+    </heading_textbox>
+    <body_textbox>      
       <width>120px</width>
       <heigth>60px</heigth>
-    </textbox2>
-    <label1>      
+      <max_lenght>550</max_lenght>
+    </body_textbox>
+    <heading_label>      
       <width>120px</width>
       <heigth>60px</heigth>
-    </label1>
-    <label2>
+      <text>Name</text>      
+    </heading_label>
+    <body_label>
       <width>120px</width>
       <heigth>60px</heigth>
-    </label2>
-    <accept_button>      
+      <text>Description</text>      
+    </body_label>
+    <send_button>      
       <width>120px</width>
       <heigth>60px</heigth>
-    </accept_button>
+      <text>Send</text>
+    </send_button>
     <close_button>      
       <width>120px</width>
       <heigth>60px</heigth>
+      <text>Close</text>
     </close_button>
   </InputForm>
 
