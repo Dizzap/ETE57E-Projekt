@@ -13,6 +13,8 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
     <text>Launcher</text>
     <server_path>/data/versions/</server_path>
     <local_path>/data/versions/</local_path>
+    <data_check>No</data_check>
+    <update_required>No</update_required>
     <login_button>
         <visible>Yes</visible>
         <width>60px</width>
@@ -30,7 +32,7 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
       <heigth>60px</heigth>
     </label1>
     <gallery>
-      <visible>No</visible>
+      <visible>Yes</visible>
       <width>120px</width>
       <heigth>60px</heigth>
       <image_source>
