@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<univerzita>
+    <nazev>ČZU v Praze</nazev>
+    <studenti>
+        <student id="xjan123">
+            <jmeno>Jan</jmeno>
+            <prijmeni>Novák</prijmeni>
+            <vek>29</vek>
+            <rocnik>1</rocnik>
+            <adresa>
+                <obec>Praha</obec>
+                <ulice>Na pískách</ulice>
+                <cislo>100</cislo>
+            </adresa>
+        </student>
+        <student id="xmichal456">
+            <jmeno>Michal</jmeno>
+            <prijmeni>Beran</prijmeni>
+            <vek>19</vek>
+            <rocnik>2</rocnik>
+            <adresa>
+                <obec>Brno</obec>
+                <ulice>Pražská</ulice>
+                <cislo>11</cislo>
+            </adresa>
+        </student>
+        <student id="xpetr789">
+            <jmeno>Petr</jmeno>
+            <prijmeni>Veliký</prijmeni>
+            <vek>24</vek>
+            <rocnik>3</rocnik>
+            <adresa>
+                <obec>Plzeň</obec>
+                <ulice>Pivní</ulice>
+                <cislo>12</cislo>
+            </adresa>
+        </student>
+        <student id="xkarel987">
+            <jmeno>Karel</jmeno>
+            <prijmeni>Nový</prijmeni>
+            <vek>26</vek>
+            <rocnik>4</rocnik>
+            <adresa>
+                <obec>Pardubice</obec>
+                <ulice>Velké náměstí</ulice>
+                <cislo>45</cislo>
+            </adresa>
+        </student>
+        <student id="xkarel987">
+            <jmeno>Franta</jmeno>
+            <prijmeni>Nejedlý</prijmeni>
+            <vek>25</vek>
+            <rocnik>5</rocnik>
+            <adresa>
+                <obec>Pardubice</obec>
+                <ulice>Velké náměstí</ulice>
+                <cislo>45</cislo>
+            </adresa>
+        </student>
+    </studenti>
+</univerzita>
