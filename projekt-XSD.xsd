@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 targetNamespace="https://www.w3schools.com"
 xmlns="https://www.w3schools.com"
@@ -13,6 +12,47 @@ elementFormDefault="qualified">
           <xs:complexType>
             <xs:sequence>
               <xs:choice>
+                <xs:element name="user"/>
+                <xs:element name="password"/>
+                <xs:element name="uses-permission"/>
+
+                <xs:element name="api">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:choice>
+                        <xs:element name="url"/>
+                        <xs:element name="method"/>
+                        <xs:element name="return"/>
+                      </xs:choice>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="uiSpecification">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:choice>
+                        <xs:element name="format"/>
+                        <xs:element name="version"/>
+                        <xs:element name="screenOrientation"/>
+                        <xs:element name="screenLayout"/>
+                        <xs:element name="screenSize"/>
+                      </xs:choice>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="connections">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:choice>
+                        <xs:element name="protocol"/>
+                        <xs:element name="timeout"/>                        
+                      </xs:choice>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
                 <xs:element name="width"/>
                 <xs:element name="height"/>
                 <xs:element name="adjustable"/>
@@ -20,27 +60,31 @@ elementFormDefault="qualified">
                 <xs:element name="movable"/>
                 <xs:element name="defaultPosition"/>
                 <xs:element name="opacity"/>
-                <xs:element name="text"/>
+                <xs:element name="serverPath"/>
+                <xs:element name="localPath"/>
+                <xs:element name="dataCheck"/>
+                <xs:element name="updateRequired"/>                
                 
-                <xs:element name="button1">
+                <xs:element name="loginButton">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
                         <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="image">
+                <xs:element name="backgroundImage">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
+                        <xs:element name="path"/>
                         <xs:element name="width"/>
                         <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
@@ -52,19 +96,34 @@ elementFormDefault="qualified">
                       <xs:choice>
                         <xs:element name="width"/>
                         <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="gridView">
+                <xs:element name="gallery">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
                         <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        
+                        <xs:element name="imageSource">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:choice>
+                                <xs:element name="path"/>
+                                <xs:element name="ending"/>
+                                <xs:element name="maxCount"/>
+                              </xs:choice>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="slodeshow"/>
+                        <xs:element name="slideTime"/>                        
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
@@ -74,9 +133,11 @@ elementFormDefault="qualified">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
+                        <xs:element name="value"/>
                         <xs:element name="width"/>
                         <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="increaseBy"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
@@ -87,66 +148,89 @@ elementFormDefault="qualified">
         </xs:element>
         
         
-        <xs:element name="InputForm">
+        <xs:element name="InputForm">                    
           <xs:complexType>
             <xs:sequence>
               <xs:choice>
+
+                <xs:element name="width"/>
+                <xs:element name="height"/>
+                <xs:element name="adjustable"/>
+                <xs:element name="controls"/>
+                <xs:element name="movable"/>
+                <xs:element name="defaultPosition"/>
+                <xs:element name="opacity"/>
+                <xs:element name="text"/>
                 
-                <xs:element name="textbox1">
+                <xs:element name="headingTextbox">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="max_lenght"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="textbox2">
+                <xs:element name="bodyTextbox">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="max_lenght"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="label1">
+                <xs:element name="headingLabel">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="label2">
+                <xs:element name="bodyLabel">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="button1">
+                <xs:element name="sendButton">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
+                      </xs:choice>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="closeButton">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:choice>
+                        <xs:element name="width"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
@@ -161,50 +245,60 @@ elementFormDefault="qualified">
           <xs:complexType>
             <xs:sequence>
               <xs:choice>
-
-                <xs:element name="label1">
+                <xs:element name="width"/>
+                <xs:element name="height"/>
+                <xs:element name="adjustable"/>
+                <xs:element name="controls"/>
+                <xs:element name="movable"/>
+                <xs:element name="defaultPosition"/>                
+                <xs:element name="text"/>
+                
+                <xs:element name="loginLabel">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
 
-                <xs:element name="label2">
+                <xs:element name="pswdLabel">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
 
-                <xs:element name="textBox1">
+                <xs:element name="loginTextBox">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
+                        <xs:element name="maxInput"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
 
-                <xs:element name="textBox2">
+                <xs:element name="pswdTextbox">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
+                        <xs:element name="char"/>
+                        <xs:element name="maxInput"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
@@ -215,32 +309,31 @@ elementFormDefault="qualified">
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="button1">
+                <xs:element name="loginButton">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
                 
-                <xs:element name="button2">
+                <xs:element name="cancelButton">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:choice>
                         <xs:element name="width"/>
-                        <xs:element name="visible"/>
-                        <xs:element name="heigth"/>
+                        <xs:element name="height"/>
+                        <xs:element name="text"/>
                       </xs:choice>
                     </xs:sequence>
                   </xs:complexType>
