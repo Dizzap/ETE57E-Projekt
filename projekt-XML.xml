@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Launcher
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
+  <MainForm>
+    <user>default</user>
+    <password>default</password>
+    <uses-permission>None</uses-permission>    
+    <api>
+      <url>http://whocares.eu</url>
+      <method>REST</method>
+      <return>JSON</return>
+    </api>
+    <uiSpecification>
+      <format>CSS</format>
+      <version>3</version>
+      <screenOrientation>Horizontal</screenOrientation>
+      <screenSize>800x600</screenSize>
+      <screenLayout>Default</screenLayout>
+    </uiSpecification>
+    <connections>
+      <protocol>SOAP</protocol>
+      <timeout>500</timeout>
+    </connections>  
+    <width>100</width>
+    <height>100</height>
+    <adjustable>false</adjustable>
+    <controls>false</controls>
+    <movable>false</movable>
+    <defaultPosition>Center</defaultPosition>
+    <opacity>100</opacity>
+    <text>Launcher</text>
+    <serverPath>/data/versions/</serverPath>
+    <localPath>/data/versions/</localPath>
+    <dataCheck>false</dataCheck>
+    <updateRequired>false</updateRequired>    
+    <loginButton>
+      <visible>true</visible>
+      <width>60</width>
+      <height>30</height>
+    </loginButton>
+    
+    <backgroundImage>
+      <path>/data/pictures/background/</path>
+      <visible>true</visible>
+      <width>100</width>
+      <height>100</height>
+    </backgroundImage>
+    
+    <label1>
+      <visible>false</visible>
+      <width>120</width>
+      <height>60</height>
+    </label1>
+    
+    <gallery>
+      <visible>true</visible>
+      <width>120</width>
+      <height>60</height>
+      <imageSource>
+        <path>/data/pictures/gallery/</path>
+        <ending>.jpg</ending>
+        <max_count>5</max_count>
+      </imageSource>
+      <slideshow>true</slideshow>
+      <slideTime>15</slideTime>
+    </gallery>
+    
+    <progressBar>
+      <value>0</value>
+      <visible>false</visible>
+      <width>120</width>
+      <height>60</height>
+      <increaseBy>2</increaseBy>
+    </progressBar>
+  </MainForm>
+
+  <InputForm>
+    <width>100</width>
+    <height>100</height>
+    <adjustable>false</adjustable>
+    <controls>false</controls>
+    <movable>false</movable>
+    <defaultPosition>Center</defaultPosition>
+    <opacity>100</opacity>
+    <text>Feedback</text>
+    
+    <headingTextbox>
+      <width>120</width>
+      <height>60</height>
+      <maxLenght>50</maxLenght>
+      <text>Enter name</text>
+    </headingTextbox>
+    
+    <bodyTextBox>
+      <width>120</width>
+      <height>60</height>
+      <maxLenght>550</maxLenght>
+      <text>Enter description</text>
+    </bodyTextBox>
+    
+    <headingLabel>
+      <width>120</width>
+      <height>60</height>
+      <text>Name</text>
+    </headingLabel>
+    
+    <bodyLabel>
+      <width>120</width>
+      <height>60</height>
+      <text>Description</text>
+    </bodyLabel>
+    
+    <sendButton>
+      <width>120</width>
+      <height>60</height>
+      <text>Send</text>
+    </sendButton>
+    
+    <closeButton>
+      <width>120</width>
+      <height>60</height>
+      <text>Close</text>
+    </closeButton>
+  </InputForm>
+
+  <LoginForm>
+    <width>100</width>
+    <height>100</height>
+    <adjustable>false</adjustable>
+    <controls>false</controls>
+    <movable>false</movable>
+    <defaultPosition>Center</defaultPosition>
+    <text>Login</text>
+    
+    <loginLabel>
+      <width>120</width>
+      <height>60</height>
+      <text>Nickname: </text>
+    </loginLabel>
+    
+    <pswdLabel>
+      <width>120</width>
+      <height>60</height>
+      <text>Password: </text>
+    </pswdLabel>
+    
+    <loginTextBox>
+      <width>120</width>
+      <height>60</height>
+      <text>Enter Nickname Here</text>
+      <maxInput>20</maxInput>
+    </loginTextBox>
+    
+    <pswdTextBox>
+      <width>120</width>
+      <height>60</height>
+      <text>Enter Password Here</text>
+      <char>*</char>
+      <maxInput>20</maxInput>
+    </pswdTextBox>
+    
+    <image>
+      <width>120</width>
+      <height>60</height>
+    </image>
+    
+    <loginButton>
+      <width>120</width>
+      <height>60</height>
+      <text>Login</text>
+    </loginButton>
+    
+    <cancelButton>
+      <width>120</width>
+      <height>60</height>
+      <text>Cancel</text>
+    </cancelButton>
+    
+  </LoginForm>
+</Launcher>
