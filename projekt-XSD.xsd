@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+  <xs:element name="Launcher">
+    <xs:complexType>
+      <xs:sequence>    
+        <xs:element name="MainForm">
+          <xs:complexType>
+            <xs:sequence>
+              
+                <xs:element name="user" type="xs:string"/>
+                <xs:element name="password" type="xs:string"/>
+                <xs:element name="uses-permission" type="xs:string"/>
+                <xs:element name="api">
+                  <xs:complexType>
+                    <xs:sequence>                      
+                        <xs:element name="url" type="xs:string"/>
+                        <xs:element name="method" type="xs:string"/>
+                        <xs:element name="return" type="xs:string"/>                      
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              
+                <xs:element name="uiSpecification">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="format">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="CSS" />                              
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="version"  type="xs:string"/>
+                        <xs:element name="screenOrientation">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="Vertical" />
+                              <xs:enumeration value="Horizontal" />                            
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="screenSize" type="xs:string"/>
+                        <xs:element name="screenLayout" type="xs:string"/>                      
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="connections">
+                  <xs:complexType>
+                    <xs:sequence>
+                       <xs:element name="protocol">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="HTTP" />
+                              <xs:enumeration value="SOAP" />
+                              <xs:enumeration value="FTP" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="timeout" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="width" type="xs:integer" />
+                <xs:element name="height" type="xs:integer"/>
+                <xs:element name="adjustable" type="xs:boolean"/>
+                <xs:element name="controls" type="xs:boolean"/>
+                <xs:element name="movable" type="xs:boolean"/>
+                <xs:element name="defaultPosition">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Center" />
+                      <xs:enumeration value="Top" />
+                      <xs:enumeration value="Bottom" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="opacity" type="xs:integer"/>
+                <xs:element name="text" type="xs:string"/>
+                <xs:element name="serverPath" type="xs:string"/>
+                <xs:element name="localPath" type="xs:string"/>
+                <xs:element name="dataCheck" type="xs:boolean"/>
+                <xs:element name="updateRequired" type="xs:boolean"/>                
+                
+                <xs:element name="loginButton">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="visible" type="xs:boolean"/>
+                        <xs:element name="width" type="xs:integer"/>                        
+                        <xs:element name="height" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="backgroundImage">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="path" type="xs:string" />
+                        <xs:element name="visible" type="xs:boolean"/>
+                        <xs:element name="width" type="xs:integer" />
+                        <xs:element name="height" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="label1">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="visible" type="xs:boolean"/>
+                        <xs:element name="width" type="xs:integer"/>                        
+                        <xs:element name="height" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="gallery">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="visible" type="xs:boolean"/>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        
+                        <xs:element name="imageSource">
+                          <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="path" type="xs:string"/>
+                                <xs:element name="ending" type="xs:string"/>
+                                <xs:element name="max_count" type="xs:integer"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="slideshow" type="xs:boolean"/>
+                        <xs:element name="slideTime" type="xs:integer"/>   
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="progressBar">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="value" type="xs:integer"/>
+                        <xs:element name="visible" type="xs:boolean"/>
+                        <xs:element name="width" type="xs:integer"/>                        
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="increaseBy" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        
+        <xs:element name="InputForm">                    
+          <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="width" type="xs:integer"/>
+                <xs:element name="height" type="xs:integer"/>
+                <xs:element name="adjustable" type="xs:boolean"/>
+                <xs:element name="controls" type="xs:boolean"/>
+                <xs:element name="movable" type="xs:boolean"/>
+                <xs:element name="defaultPosition">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Center" />
+                      <xs:enumeration value="Top" />
+                      <xs:enumeration value="Bottom" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="opacity" type="xs:integer"/>
+                <xs:element name="text" type="xs:string"/>
+                
+                <xs:element name="headingTextbox">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="maxLenght" type="xs:integer"/>                        
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="bodyTextBox">
+                  <xs:complexType>
+                    <xs:sequence>                      
+                        <xs:element name="width" type="xs:integer"/>                        
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="maxLenght" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>                      
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="headingLabel">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="bodyLabel">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="sendButton">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="closeButton">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <xs:element name="LoginForm">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="width" type="xs:integer"/>
+                <xs:element name="height" type="xs:integer"/>
+                <xs:element name="adjustable" type="xs:boolean"/>
+                <xs:element name="controls" type="xs:boolean"/>
+                <xs:element name="movable" type="xs:boolean" />
+                <xs:element name="defaultPosition">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Center" />
+                      <xs:enumeration value="Top" />
+                      <xs:enumeration value="Bottom" />
+                    </xs:restriction>
+                 </xs:simpleType>
+                </xs:element>
+                <xs:element name="text" type="xs:string"/>
+                
+                <xs:element name="loginLabel">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="pswdLabel">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="loginTextBox">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                        <xs:element name="maxInput" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="pswdTextBox">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                        <xs:element name="char" type="xs:string"/>
+                        <xs:element name="maxInput" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element name="image">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="loginButton">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="cancelButton">
+                  <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="width" type="xs:integer"/>
+                        <xs:element name="height" type="xs:integer"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element> 
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+       </xs:sequence>
+    </xs:complexType>
+  </xs:element>  
+</xs:schema>
