@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Launcher
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
-  <Mainform>
+  <MainForm>
     <user>default</user>
     <password>default</password>
     <uses-permission>None</uses-permission>    
@@ -14,169 +14,168 @@ xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
     <uiSpecification>
       <format>CSS</format>
       <version>3</version>
-      <screenOrientation></screenOrientation>
+      <screenOrientation>Horizontal</screenOrientation>
       <screenSize>800x600</screenSize>
       <screenLayout>Default</screenLayout>
     </uiSpecification>
     <connections>
-      <protocol>TCP</protocol>
-      <timeout>500ms</timeout>
-    </connections>
-  
-    <width>100%</width>
-    <height>100%</height>
-    <adjustable>No</adjustable>
-    <controls>No</controls>
-    <movable>No</movable>
+      <protocol>SOAP</protocol>
+      <timeout>500</timeout>
+    </connections>  
+    <width>100</width>
+    <height>100</height>
+    <adjustable>false</adjustable>
+    <controls>false</controls>
+    <movable>false</movable>
     <defaultPosition>Center</defaultPosition>
-    <opacity>100%</opacity>
+    <opacity>100</opacity>
     <text>Launcher</text>
     <serverPath>/data/versions/</serverPath>
     <localPath>/data/versions/</localPath>
-    <dataCheck>No</dataCheck>
-    <updateRequired>No</updateRequired>
-    
+    <dataCheck>false</dataCheck>
+    <updateRequired>false</updateRequired>    
     <loginButton>
-      <visible>Yes</visible>
-      <width>60px</width>
-      <height>30px</height>
+      <visible>true</visible>
+      <width>60</width>
+      <height>30</height>
     </loginButton>
     
     <backgroundImage>
       <path>/data/pictures/background/</path>
-      <visible>Yes</visible>
-      <width>100%</width>
-      <height>100%</height>
+      <visible>true</visible>
+      <width>100</width>
+      <height>100</height>
     </backgroundImage>
     
     <label1>
-      <visible>No</visible>
-      <width>120px</width>
-      <height>60px</height>
+      <visible>false</visible>
+      <width>120</width>
+      <height>60</height>
     </label1>
     
     <gallery>
-      <visible>Yes</visible>
-      <width>120px</width>
-      <height>60px</height>
+      <visible>true</visible>
+      <width>120</width>
+      <height>60</height>
       <imageSource>
         <path>/data/pictures/gallery/</path>
         <ending>.jpg</ending>
         <max_count>5</max_count>
       </imageSource>
-      <slideshow>Yes</slideshow>
+      <slideshow>true</slideshow>
       <slideTime>15</slideTime>
     </gallery>
+    
     <progressBar>
       <value>0</value>
-      <visible>No</visible>
-      <width>120px</width>
-      <height>60px</height>
+      <visible>false</visible>
+      <width>120</width>
+      <height>60</height>
       <increaseBy>2</increaseBy>
     </progressBar>
-  </Mainform>
+  </MainForm>
 
   <InputForm>
-    <width>100%</width>
-    <height>100%</height>
-    <adjustable>Yes</adjustable>
-    <controls>No</controls>
-    <movable>Yes</movable>
+    <width>100</width>
+    <height>100</height>
+    <adjustable>false</adjustable>
+    <controls>false</controls>
+    <movable>false</movable>
     <defaultPosition>Center</defaultPosition>
-    <opacity>100%</opacity>
+    <opacity>100</opacity>
     <text>Feedback</text>
     
     <headingTextbox>
-      <width>120px</width>
-      <height>60px</height>
-      <max_lenght>50</max_lenght>
+      <width>120</width>
+      <height>60</height>
+      <maxLenght>50</maxLenght>
       <text>Enter name</text>
     </headingTextbox>
     
-    <bodyTextbox>
-      <width>120px</width>
-      <height>60px</height>
-      <max_lenght>550</max_lenght>
+    <bodyTextBox>
+      <width>120</width>
+      <height>60</height>
+      <maxLenght>550</maxLenght>
       <text>Enter description</text>
-    </bodyTextbox>
+    </bodyTextBox>
     
     <headingLabel>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Name</text>
     </headingLabel>
     
     <bodyLabel>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Description</text>
     </bodyLabel>
     
     <sendButton>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Send</text>
     </sendButton>
     
     <closeButton>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Close</text>
     </closeButton>
   </InputForm>
 
-  <Loginform>
-    <width>100%</width>
-    <height>100%</height>
-    <adjustable>No</adjustable>
-    <controls>No</controls>
-    <movable>No</movable>
+  <LoginForm>
+    <width>100</width>
+    <height>100</height>
+    <adjustable>false</adjustable>
+    <controls>false</controls>
+    <movable>false</movable>
     <defaultPosition>Center</defaultPosition>
     <text>Login</text>
     
     <loginLabel>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Nickname: </text>
     </loginLabel>
     
     <pswdLabel>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Password: </text>
     </pswdLabel>
     
     <loginTextBox>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Enter Nickname Here</text>
       <maxInput>20</maxInput>
     </loginTextBox>
     
     <pswdTextBox>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Enter Password Here</text>
       <char>*</char>
-      <max_input>20</max_input>
+      <maxInput>20</maxInput>
     </pswdTextBox>
     
     <image>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
     </image>
     
     <loginButton>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Login</text>
     </loginButton>
     
     <cancelButton>
-      <width>120px</width>
-      <height>60px</height>
+      <width>120</width>
+      <height>60</height>
       <text>Cancel</text>
     </cancelButton>
     
-  </Loginform>
+  </LoginForm>
 </Launcher>
