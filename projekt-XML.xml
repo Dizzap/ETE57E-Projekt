@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Launcher
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="projekt-XSD.xsd">
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <MainForm>
     <user>default</user>
     <password>default</password>
