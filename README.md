@@ -1,2 +1,2 @@
 # ETE57E-Projekt
-Projekt na předmět ETE57E - Značkovací jazyky
+Semestrální projekt na předmět ETE57E - Značkovací jazyky
